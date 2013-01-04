@@ -3,6 +3,7 @@ audio {
 }
 
 .soundboard {
+	margin-top:0;
 
 	li {
 		width:50%;
@@ -10,34 +11,17 @@ audio {
 
 		a {
 			display:block;
-			margin-right:20px;
 			background-repeat:no-repeat;
 			background-position:center center;
-			height:140px;
-			min-width:140px;
-			text-indent:-9999px;
+			max-width:100%;
+			text-align:center;
+
+			img {
+				max-width:100%;
+			}
 
 			&:hover {
 				.opacity(0.8);
-			}
-
-			&.puppy {
-				background-image:url(../img/puppy.png);
-			}
-			&.kitten {
-				background-image:url(../img/kitten.png);
-			}
-			&.cow {
-				background-image:url(../img/cow.png);
-			}
-			&.chewbacca {
-				background-image:url(../img/chewbacca.png);
-			}
-		}
-
-		&:nth-child(even) {
-			a {
-				margin-right:0;
 			}
 		}
 	}
