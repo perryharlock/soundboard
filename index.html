@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+
+	<meta charset="utf-8" />
+    <title>Soundboard</title>
+
+    <!-- Meta information - for search engines and other clever web bits --> 
+    <meta property="og:title" content="ph webs soundboard" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.phwebs.co.uk" />
+	<meta property="og:image" content="http://www.phwebs.co.uk/img/kitten.png" />
+
+    <meta name="description" content = "HTML5 soundboard" />
+	<meta name="keywords" content="keywords"/>
+
+ 	<!-- For mobile devices. -->
+	<meta name="viewport" content="width=device-width"/>
+
+	<!-- This site had been built using LESS. This is the compiled and minified CSS
+	To see the individual LESS files navigate to www.website.co.uk/less/
+	This will show you the individual less files :-) -->
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+
+	<!-- favicon and shortcut icons for mobile devices. -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+
+</head>
+
+<!--[if IE 7]><body class="no-javascript ie7"><![endif]-->
+<!--[if IE 8]><body class="no-javascript ie8"><![endif]-->
+<!--[if IE 9]><body class="no-javascript ie9"><![endif]-->
+<!--[if !IE]>-->
+<body class="no-javascript">
+<!--<![endif]-->
+	<header>
+		<div class="header">
+			<div class="grid">
+				<div class="col-12">
+					<h1>HTML5 Soundboard</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="grid">
+		<div class="col-12 col-tablet-12">
+			<section>
+				<audio class="kitten" title="Kitten Clip">
+					<source src="audio/kitten.mp3" />
+					<source src="audio/kitten.ogg" />
+				</audio>
+				<audio class="puppy" title="Puppy Clip">
+					<source src="audio/puppy.mp3" />
+					<source src="audio/puppy.ogg" />
+				</audio>
+				<audio class="cow" title="Cow Clip">
+					<source src="audio/cow.mp3" />
+					<source src="audio/cow.ogg" />
+				</audio>
+				<audio class="chewbacca" title="Chewbacca Clip">
+					<source src="audio/chewbacca.mp3" />
+					<source src="audio/chewbacca.ogg" /> 
+				</audio>
+				<ul id="doc" class="list floated soundboard clearfix">
+					<!-- Audio soundboard will go here -->
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer">
+			<div class="grid">
+				<div class="col-12">
+					<small>&copy; copyright perry harlock, 2012</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Google Analytics -->
+	
+
+	<!-- Javascript loveliness. -->
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+
+</body>
+</html>

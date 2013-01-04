@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8" />
+    
+    <title>website - styleguide</title>
+
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+
+</head>
+<!--[if IE 7]><body class="no-javascript ie7"><![endif]-->
+<!--[if IE 8]><body class="no-javascript ie8"><![endif]-->
+<!--[if IE 9]><body class="no-javascript ie9"><![endif]-->
+<!--[if !IE]>-->
+<body class="no-javascript">
+<!--<![endif]-->
+    <header>
+        <div class="header">
+            <div class="grid">
+                <div class="col-12">
+                    <h1>Styleguide</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+	<div class="grid">
+        <div class="col-4 col-mobile-12">
+            <aside>
+                <div class="aside">
+                    <ul class="list box spaced crunch-top">
+                        <li><a href="#text-level">Text level semantics</a></li>
+                        <li><a href="#lists">Lists</a></li>
+                        <li><a href="#block-quotes">Block Quotes</a></li>
+                        <li><a href="#code">Code</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#headings">Headings</a></li>
+                        <li><a href="#links">Links</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>
+
+                     <div class="box">
+                        <ul class="list spaced crunch">
+                            <li><a href="#carousel">JS Carousel</a></li>
+                            <li><a href="#tabs">JS Tabs</a></li>
+                            <li><a href="#hideshow">JS Hide Show</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="box spaced">
+                        <p>This is a standard box with spacing</p>
+                    </div>
+
+                    <div class="secondary-box spaced">
+                        <p>This is a secondary box with spacing</p>
+                    </div>
+
+                    <div id="hideshow" class="hideshow" data-role="hideShowWrapper">
+                        <h2>JS Hide Show</h2>
+                        <h3 class="hide-show-trigger" data-role="hideShowTrigger">This is the hidey showy thingy<span class="icon">&nbsp;</span></h3>
+                        <p class="hide-show-target" data-role="hideShowTarget">
+                            This is a paragraph of text; it is being used to test basic typography and ensure that longer blocks of content are readable. The rest of this paragraph is going to be filler copy, feel free to ignore it as I'll be rambling on. Please don't let this set a precedent though – the rest of the content in this styleguide may be very useful, and will attempt to explain its purpose. Actually, thinking about it, that's exactly what this paragraph has done!
+                        </p>
+                        <h3 class="hide-show-trigger" data-role="hideShowTrigger">This is the hidey showy thingy<span class="icon">&nbsp;</span></h3>
+                        <p class="hide-show-target" data-role="hideShowTarget">
+                            This is a paragraph of text; it is being used to test basic typography and ensure that longer blocks of content are readable. The rest of this paragraph is going to be filler copy, feel free to ignore it as I'll be rambling on. Please don't let this set a precedent though – the rest of the content in this styleguide may be very useful, and will attempt to explain its purpose. Actually, thinking about it, that's exactly what this paragraph has done!
+                        </p>
+                        <h3 class="hide-show-trigger" data-role="hideShowTrigger">This is the hidey showy thingy<span class="icon">&nbsp;</span></h3>
+                        <p class="hide-show-target" data-role="hideShowTarget">
+                            This is a paragraph of text; it is being used to test basic typography and ensure that longer blocks of content are readable. The rest of this paragraph is going to be filler copy, feel free to ignore it as I'll be rambling on. Please don't let this set a precedent though – the rest of the content in this styleguide may be very useful, and will attempt to explain its purpose. Actually, thinking about it, that's exactly what this paragraph has done!
+                        </p>
+                        
+                    </div>
+
+                </div>
+            </aside>
+        </div>
+
+		<div class="col-8 col-mobile-12">
+            <h1 class="crunch-top">Style Scaffolding</h1>
+
+            <p>This page is built with <a href="https://github.com/rowanmanning/frame">Frame</a>. Frame is a light-weight HTML scaffold for you to test your stylesheets against. That's all, just a HTML document with lots of elements. It's useful! The person who's using this doesn't have to keep this paragraph – it's jolly nice of them to have left it here :)</p>
+
+            <p>This is a paragraph of text; it is being used to test basic typography and ensure that longer blocks of content are readable. The rest of this paragraph is going to be filler copy, feel free to ignore it as I'll be rambling on. Please don't let this set a precedent though – the rest of the content in this styleguide may be very useful, and will attempt to explain its purpose. Actually, thinking about it, that's exactly what this paragraph has done!</p>
+
+
+            <h2 id="text-level">Text-Level Semantics</h2>
+
+            <p>Text-level semantics are important, right? Let's have a look at some of them. We'll start with the <strong>strong element</strong>, and swiftly move onto <em>emphasis</em>. Pretty standard stuff. I'll tag <sub>subscript</sub> and <sup>superscript</sup> onto the end of this paragraph too.</p>
+
+            <p>Let's show off some <abbr title="abbreviation">abbr</abbr>, and elements which <del>save the world</del> <ins>deal with edits to documents</ins>; it's worth noting that the 's' element is used <s>twice</s> once in this document.</p>
+
+            <p>In reminding myself how to use all these elements, I often refer to <a href="http://csswizardry.com/2011/01/html5-and-text-level-semantics/"><cite>this article from CSS Wizardry</cite></a>. He says: <q>The &lt;q&gt; element is simply used to mark up inline quotations; quotes that are in the context of surrounding copy</q>.</p>
+
+            <p>Last two elements now*: when writing about code, the aptly named <code>code</code> element comes into play; and lastly, the 'mark' element is useful for <mark>highlighting text</mark> or maybe search terms.</p>
+
+            <p><small>* Not a guarantee</small></p>
+
+
+            <h2 id="lists">Lists</h2>
+
+            <h3>Types Of List (unordered)</h3>
+
+            <ul>
+                <li>Unordered Lists</li>
+                <li>Ordered Lists</li>
+                <li>Definition Lists</li>
+            </ul>
+
+            <h3>The Order In Which I Tackle A Front-End Build (ordered)</h3>
+
+            <ol>
+                <li>Construct the markup</li>
+                <li>Style elements</li>
+                <li>Enhance with JavaScript</li>
+            </ol>
+
+            <h3>What Lists Are For (definition)</h3>
+
+            <dl>
+                <dt>Unordered Lists</dt>
+                <dd>For lists of items where order is not important.</dd>
+
+                <dt>Ordered Lists</dt>
+                <dd>For lists of items where order has meaning.</dd>
+
+                <dt>Definition Lists</dt>
+                <dd>For lists of items which have a title and description.</dd>
+            </dl>
+
+            <h3>Mixed And Complex Lists</h3>
+
+            <ul>
+                <li>
+                    <p>List item with a paragraph.</p>
+                </li>
+                <li>
+                    <p>List item with a nested list.</p>
+                    <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>
+                            List item with <em>another</em> nested list.
+                            <ol>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>List item with a paragraph.</p>
+                    <p>And another paragraph.</p>
+                </li>
+            </ul>
+
+
+            <h2 id="block-quotes">Block Quotes</h2>
+
+            <blockquote>
+                <p>
+                    Block quotes can be used to quote somebody.<br />
+                    <small>Rowan Manning</small>
+                </p>
+            </blockquote>
+
+            <p>With a citation:</p>
+
+            <blockquote>
+                <p>
+                    Block quotes can also have a citation!<br />
+                    <small>Rowan Manning on <cite>this page</cite></small>
+                </p>
+            </blockquote>
+
+
+            <h2 id="code">Code</h2>
+
+            <pre><code>sayMessage = (msg) -&gt; alert "Scaffold says: #{ msg }"
+        sayHello = (to) -&gt; sayMessage "Hello #{ to }!"
+
+        sayHello 'Reader'
+        sayMessage 'Code blocks can be useful.'
+        </code></pre>
+
+            <h2 id="tables">Tables</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Table Heading</th>
+                        <th>Table Heading</th>
+                        <th>Table Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                    </tr>
+                    <tr>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                    </tr>
+                    <tr>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                    </tr>
+                    <tr>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                        <td>Cell content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h2 id="headings">Headings</h2>
+
+            <h1>Level 1 Heading</h1>
+
+            <p>This is a paragraph after a level 1 heading consectetur adipiscing elit. Donec malesuada volutpat libero, posuere lacinia felis aliquet eu. Maecenas venenatis suscipit dapibus.</p>
+
+            <h2>Level 2 Heading</h2>
+
+            <p>This is a paragraph after a level 1 heading consectetur adipiscing elit. Donec malesuada volutpat libero, posuere lacinia felis aliquet eu. Maecenas venenatis suscipit dapibus.</p>
+
+            <h3>Level 3 Heading</h3>
+
+            <p>This is a paragraph after a level 1 heading consectetur adipiscing elit. Donec malesuada volutpat libero, posuere lacinia felis aliquet eu. Maecenas venenatis suscipit dapibus.</p>
+
+            <h4>Level 4 Heading</h4>
+
+            <p>This is a paragraph after a level 1 heading consectetur adipiscing elit. Donec malesuada volutpat libero, posuere lacinia felis aliquet eu. Maecenas venenatis suscipit dapibus.</p>
+
+            <h5>Level 5 Heading</h5>
+
+            <p>This is a paragraph after a level 1 heading consectetur adipiscing elit. Donec malesuada volutpat libero, posuere lacinia felis aliquet eu. Maecenas venenatis suscipit dapibus.</p>
+
+            <h6>Level 6 Heading</h6>
+
+            <p>This is a paragraph after a level 1 heading consectetur adipiscing elit. Donec malesuada volutpat libero, posuere lacinia felis aliquet eu. Maecenas venenatis suscipit dapibus.</p>
+
+
+            <h2 id="links">Links</h2>
+
+            <ul>
+                <li><a href="#1">Just a bunch</a></li>
+                <li><a href="#2">of links</a></li>
+                <li><a href="#3">to make it</a></li>
+                <li><a href="#4">easier to compare</a></li>
+                <li><a href="#5">regular and <code>:visited</code> styles</a></li>
+                <li><a href="#6">(don't click them all!)</a></li>
+            </ul>
+
+            <h2 id="forms">Forms</h2>
+
+            <form>
+                <fieldset>
+
+                    <label>Text input</label>
+                    <input type="text" placeholder="This is an text input"/>
+
+                    <label>Email input</label>
+                    <input type="email" placeholder="This is an email input"/>
+
+                    <label>Search input</label>
+                    <input type="search" placeholder="This is a search input"/>
+
+                    <label>URL input</label>
+                    <input type="url" placeholder="This is a url input"/>
+
+                    <label>Tel input</label>
+                    <input type="tel" placeholder="This is a tel input"/>
+
+                    <label>Password input</label>
+                    <input type="password" placeholder="This is a password input" name="pwd">
+
+                    <label>Textarea</label>
+                    <textarea placeholder="Tell me something" cols="8" rows="8"></textarea>
+
+                    <label>Select</label>
+                    <select>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+
+                    <label>Checkboxes</label>
+                    <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+                    <input type="checkbox" name="vehicle" value="Car">I have a car
+
+                    <label>Radio buttons</label>
+                    <input type="radio" name="sex" value="male">Male<br>
+                    <input type="radio" name="sex" value="female">Female
+
+                    <div>
+                        <input type="submit" value="Submit"/>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+            <h2 id="media">Media</h2>
+
+            <p class="clearfix"><img class="figure pull-left" alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/200/200" />
+            This is an image floated left. Just add classes <code>pull-left figure</code> and ta-da the cute ickle puddy cat is looking lovely and fluffy</p>
+
+            <p class="clearfix"><img class="figure pull-right" alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/200/200" />
+            This is an image floated right. Just add classes <code>pull-right figure</code> and ta-da the cute ickle puddy cat is looking lovely and fluffy</p>
+
+            <h2 id="buttons">Buttons</h2>
+
+            <p>
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+                <button type="button" value="Button">Button</button>
+                <input type="submit" value="Input Submit" />
+            </p>
+
+            <p>
+                <a href="#" class="button">Button</a>
+                <a href="#" class="secondary-btn">Secondary Button</a>
+                <a href="#" class="highlight-btn">Highlight Button</a>
+            </p>
+
+            <p class="button-group clearfix">
+                <a href="#" class="button first">Button 1</a>
+                <a href="#" class="button">Button 2</a>
+                <a href="#" class="button last">Button 3</a>
+            </p>
+
+
+		</div>
+    </div>
+
+    <section>
+        <div class="js">
+            <div class="grid">
+                <div class="col-12">
+                    <h2 id="carousel">JS Carousel</h2>
+                    <div data-type="carousel" class="carousel">
+
+                        <ol class="floated list clearfix button-group">
+                            <li><a class="first button" data-role="leftButton" href="#">&laquo;</a></li>
+                            <li class="pull-right"><a class="last button" data-role="rightButton"  href="#">&raquo;</a></li>
+                        </ol>
+
+                        <div class="carousel-wrapper" data-role="carouselWrapper">
+                            <ul class="floated list clearfix item-container" data-role="itemContainer">
+                                <li id="image1" data-role="carouselItem">
+                                    <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
+                                </li>
+                                <li id="image2" data-role="carouselItem">
+                                    <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
+                                </li>
+                                <li id="image3" data-role="carouselItem">
+                                    <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
+                                </li>
+                                <li id="image4" data-role="carouselItem">
+                                    <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
+                                </li>
+                                <li id="image5" data-role="carouselItem">
+                                    <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <h2 id="tabs">JS Tabs</h2>
+                    <div data-role="tabWrapper" class="tab-wrapper">
+                        <ul class="floated list clearfix crunch-bottom tab-nav" data-role="tabNav">
+                            <li>
+                                <a data-role="tabTrigger" href="#tab-target1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a data-role="tabTrigger" href="#tab-target2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a data-role="tabTrigger" href="#tab-target3">
+                                    Tab 3
+                                </a>
+                            </li>
+                            <li>
+                                <a data-role="tabTrigger" href="#tab-target4">
+                                    Tab 4
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div id="tab-target1" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the first tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+
+                        <div id="tab-target2" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the second tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+
+                        <div id="tab-target3" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the third tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+
+                        <div id="tab-target4" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the fourth tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-12">
+                    <h2 id="hideshow">JS Hide Show</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="grid">
+                <div class="col-12">
+                    <small>&copy; copyright website owner, 2012</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript loveliness. -->
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js" ></script>
+    <script type="text/javascript" src="js/carousel.js" ></script>
+    <script type="text/javascript" src="js/tabs.js" ></script>
+    <script type="text/javascript" src="js/hideshow.js" ></script>
+    
+</body>
+</html>

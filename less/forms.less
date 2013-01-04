@@ -1,0 +1,59 @@
+// forms
+label {
+  display:block;
+  .type-margin-top(@h-margin);
+  .type-size(@base-type-size * 1.2);
+
+  span {
+    color:@error-color;
+  }
+
+  &:first-child {
+    margin-top:0;
+  }
+
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='search'],
+input[type='password'],
+textarea {
+  height:20px;
+  padding:8px;
+  width:50%;
+  background-color:@input-bg;
+  .box-shadow(3px 3px 3px rgba(0, 0, 0, 0.075) inset);
+  border:1px solid @input-border;
+  color:lighten(@type-color, 20%);
+  font-family:@font-type-base;
+  .type-size(@base-type-size);
+  .transition();
+}
+
+span.error {
+  display:block;
+  font-family:@font-type-base;
+  color:@error-color;
+  margin-top:0;
+  .type-size(15px);
+  font-style:italic;
+  .transition();
+}
+
+input.error {
+  border:1px solid lighten(@error-color, 40%);
+  background-color:lighten(@error-color, 70%);
+}
+
+input[type='email'],
+input[type='url'] {
+  width:70%;
+}
+
+textarea {
+  width:90%;
+  height:100px;
+}

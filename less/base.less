@@ -1,0 +1,305 @@
+// less/base.less
+
+html {
+    font-size:62.5%;
+    background-color:@body-bg-color;
+    color:@type-color;
+}
+
+body {
+	.type-size(@base-type-size);
+	line-height:@base-line-height;
+	font-family:@font-type-base;
+	background:@body-bg-color @body-bg-image fixed repeat center top;
+}
+
+.grid {
+	margin:0 auto;
+}
+
+p {
+    .type-margin-bottom(@block-margin);
+}
+
+ol p, ul p, dl p {
+	margin-top:0;
+	margin-bottom:0;
+}	
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h6, h6,
+{
+	.type-margin-top(@h-margin);
+	.type-margin-bottom(@h-margin);
+  font-family:@font-type-title;
+  color:@heading-color;
+}
+
+h1, .h1	{
+   	.type-size(32px);
+}
+
+h2, .h2	{
+   	.type-size(26px);
+}
+
+h3, .h3	{
+   	.type-size(22px);
+    .type-margin-top(@h-margin * 0.50);
+    .type-margin-bottom(@h-margin * 0.50);
+}
+
+h4, .h4	{
+   	.type-size(22px);
+    .type-margin-top(@h-margin * 0.50);
+    .type-margin-bottom(@h-margin * 0.50);
+}
+
+h5, .h5	{
+   	.type-size(20px);
+    .type-margin-top(@h-margin * 0.30);
+    .type-margin-bottom(@h-margin * 0.30);
+}
+
+h6, .h6	{
+   	.type-size(18px);
+    .crunch;
+}
+
+a {
+  color:@link-color;
+  text-decoration:none;
+
+  &:hover, &:active {
+      color:@link-hover-color;
+      text-decoration:underline;
+    }
+    &:visited {
+      color:@link-visited-color;
+    }
+}
+
+strong {
+  font-weight:bold;
+}
+
+small, sub, sup {
+  .type-size(14px);
+}
+
+mark {
+  background-color:@mark-color;
+}
+
+cite, em, q {
+  font-style:italic;
+}
+
+q:after {
+  content:"”";
+}
+
+q:before {
+  content:"“";
+}
+
+sub, sup {
+  line-height:0;
+  position:relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom:-0.25em;
+}
+sup {
+  top:-0.5em;
+}
+
+abbr {
+  border-bottom:dotted 1px;
+}
+
+// Blockquote
+blockquote {
+  padding-left:20px;
+  border-left:solid 5px @border-color;
+
+  small {
+    &:before {
+      content:"-";
+    }
+  }
+}
+
+// Code
+pre, code {
+  font-family:Consolas,'Lucida Console',Monaco,monospace;
+}
+
+code {
+  background-color:@input-bg;
+  border:solid 1px @input-border;
+  padding:3px;
+}
+
+pre code {
+  display:block;
+  padding:15px;
+  background-color:@input-bg;
+  border:solid 1px @input-border;
+}
+
+// Tables
+table {
+  width:100%;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+thead {
+  border-top:1px solid @input-border;
+}
+
+tr {
+  border-left:1px solid @input-border;
+
+  &:nth-child(2n) {
+    td, th {
+      background-color:@input-bg;
+    }
+  }
+}
+
+th, td {
+  border-bottom:1px solid @input-border;
+  border-right:1px solid @input-border;
+  padding:5px 10px;
+  background-color:@light-bg;
+}
+
+th {
+  background-color:darken(@input-bg, 10%);
+  text-align:left;
+  font-weight:bold;
+}
+
+// lists
+ul, ol {
+    margin-left:0;
+    padding-left:26px;
+    .type-margin-top(20px);
+    .type-margin-bottom(20px);
+
+	ul, ol, p {
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+
+ul li {
+   	list-style-type:disc;
+}
+
+ol li {
+	list-style-type:decimal;
+}
+
+.list {
+  padding-left:0;
+
+  li {
+    list-style-type:none;
+  }
+}
+
+.floated {
+  li {
+    float:left;
+  }
+}
+
+dt {
+  font-weight:bold;
+}
+
+dd {
+	padding-left:20px;
+	.type-margin-bottom(16px);
+	margin-left:0;
+}
+
+// navigation menu
+.nav {
+  li {
+    .inline-block;
+    list-style: none;
+    margin-left:10px;
+  }
+}
+
+// Boxes
+.box {
+  border:solid 1px @border-color;
+  background-color:@box-bg;
+  margin-bottom:@block-margin;
+
+  p:last-child {
+    margin-bottom:0;
+  }
+}
+
+.secondary-box {
+  background-color:@box-secondary-bg;
+  border:none;
+  margin-bottom:@block-margin;
+
+  p:last-child {
+    margin-bottom:0;
+  }
+}
+
+// useful classes
+.hidden {
+  display:none;
+}
+
+.crunch {
+  margin-top:0 !important;
+  margin-bottom:0 !important; 
+}
+
+.crunch-top {
+  margin-top:0 !important;
+}
+
+.crunch-bottom {
+  margin-bottom:0 !important;
+}
+
+.spaced {
+  padding:@padding !important;
+}
+
+.figure {
+  margin:@h-margin;
+}
+
+.pull-right {
+  float:right !important;
+
+  // spacing for right floated figures
+  &.figure {
+    margin-right:0;
+    margin-top:0;
+  }
+}
+
+.pull-left {
+  float:left !important;
+
+  // spacing for left floated figures
+  &.figure {
+    margin-left:0;
+    margin-top:0;
+  }
+}

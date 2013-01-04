@@ -1,0 +1,72 @@
+.base-button {
+	.border-radius();
+	padding:10px 20px;
+	.box-shadow(3px 3px 3px rgba(0, 0, 0, 0.075) inset);
+	cursor:pointer;
+	font-family:@font-type-title;
+	.type-size(18px);
+  border:solid 1px darken(@input-border, 5%);
+
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+.button, button, input[type="submit"], input[type="button"] {
+  .base-button;
+  background-color:@button-bg;
+  color:@button-color;
+
+  &:hover, &:active, &:focus {
+    background-color:lighten(@button-bg,5%);
+    color:darken(@button-color,5%);
+  }
+
+}
+
+.secondary-btn {
+  .base-button;
+  background-color:@secondary-button-bg;
+  color:@button-secondary-color;
+
+  &:hover {
+    background-color:lighten(@secondary-button-bg,5%);
+    color:darken(@button-secondary-color,5%);
+  }
+
+}
+
+.highlight-btn {
+  .base-button;
+  background-color:@highlight-button-bg;
+  color:@button-highlight-color;
+
+  &:hover {
+    background-color:lighten(@highlight-button-bg, 5%);
+    color:darken(@button-highlight-color,5%);
+  }
+
+}
+
+.button-group {
+  
+  .button {
+    float:left;
+    .border-radius(0, 0, 0, 0);
+    border-right:none;
+
+    &.first {
+      .border-radius(4px, 0, 0, 4px);
+    }
+
+    &.last {
+      .border-radius(0, 4px, 4px, 0);
+      border-right:solid 1px darken(@input-border, 5%);
+    }
+
+  }
+
+  
+}
+
+

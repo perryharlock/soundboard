@@ -1,0 +1,51 @@
+// carousel
+
+.carousel {
+	position:relative;
+
+	ol {
+		position:absolute;
+		top:30%;
+		z-index:10;
+		width:102%;
+		margin-left:-1%;
+
+		a {
+			display:block;
+			text-align:center;
+			.opacity(0.7);
+
+			&:hover {
+				.opacity(0.9);
+			}
+		}
+	}
+}
+.carousel-wrapper {
+	overflow:hidden;
+	.type-margin-bottom(20px);
+}
+
+.item-container {
+	width:100%;
+	margin-top:0;
+	position:relative;
+	left:0;
+	top:0;
+
+	li {
+		img {
+			margin-right:10px;
+			width:300px;
+			height:200px;
+		}
+
+	}
+}
+
+// Hide navigation if no javascript
+.no-javascript {
+	.carousel ol {
+		display:none;
+	}
+}
